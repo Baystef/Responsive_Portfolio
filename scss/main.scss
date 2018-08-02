@@ -57,9 +57,11 @@ main {
         margin-top: 1rem;
         a {
             padding: 0.4rem;
+            @include easeOut();
+            
             &:hover {
                 color: $secondary-color;
-                @include easeOut();
+                font-size: 1.2rem;
             }
         }
     }
@@ -75,7 +77,9 @@ main {
 .about-info {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+    grid-template-areas: 
+    'bioimage bio bio'
+    'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr);
     .bio-image {
         grid-area: bioimage;
@@ -121,7 +125,7 @@ main {
     }
 }
 
-// COntact Page
+// Contact Page
 .boxes {
     display: flex;
     flex-wrap: wrap;
