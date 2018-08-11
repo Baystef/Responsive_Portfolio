@@ -77,10 +77,6 @@
 
 // Smartphones
 @include mediaSm {
-    &#home {
-        float: none;
-    }
-    
     main#home h1 {
         margin-top: 10vh;
     }
